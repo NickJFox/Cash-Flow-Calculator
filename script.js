@@ -81,8 +81,8 @@ function addInputRow(button) {
   }
   
   if ((sum1 - (sum2 + sum3)) > 0) {
-    // Displays a message with an gif based on leftover sum ammount
-    document.getElementById("message").innerHTML = "Save, invest, or treat your self. <br> <img src='https://media.tenor.com/i5YlZcK7HhIAAAAC/treat-yo-self-treat-yourself.gif' alt='Image'>";
+    // Displays a message based on leftover sum ammount
+    document.getElementById("message").innerHTML = "Save, invest, or treat your self.";
   }
       });
     }
