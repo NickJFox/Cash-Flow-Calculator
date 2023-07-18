@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #151515; 
+    font-family: "DM Serif Display",Garimond,serif!important;
+    text-decoration: underline;
+  }
+  
+  h3 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #151515;
+    font-family: "DM Serif Display",Garimond,serif!important;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0;
+  }
+  
+  label {
+    font-family: CircularStd-Bold,Arial,sans-serif;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #151515;
+    width: 350px;
+  }
+  
+  label[for="Net Income"],
+  label[for="fexpenses"],
+  label[for="vexpenses"],
+  label[for="leftover"],
+  label[for="VEresult"],
+  label[for="FEresult"],
+  label[for="Incomeresult"]
+   {
+   text-decoration: underline;
+   font-size: 20px;
+   color: #151515;
+   font-weight: bold;
+   font-family: CircularStd-Bold,Arial,sans-serif;
+  }
+  
+  button[type="button"] {
+    padding: 6px 10px;
+    background-color: #006400;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #004f00; /* Even darker green on hover */
+  }
+  
+  #netIncomeContainer,
+  #fixedExpensesContainer,
+  #variableExpensesContainer {
+    margin-bottom: 10px;
+    
+  }
+  
+  .input-row,
+  .input-row2,
+  .input-row3 {
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  #totals-container {
+    position: fixed;
+    top: -345px;
+    width: 200px;
+    display: inline block;
+    margin: 500px;
+  }
+  
+  
+  .divider {
+    border: none;
+    border-top: 1px solid black;
+    margin: 10px 0;
+    width: 150%;
+  }
+  
+  #sumButton {
+    padding: 10px 16px;
+    background-color: #006400;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  #sumButton:hover {
+    background-color: #004f00; /* Even darker green on hover */
+  }
+  
+  input[type="text"][id^="Incomeresult"],
+  input[type="text"][id^="FEresult"],
+  input[type="text"][id^="VEresult"],
+  input[type="text"][id^="lefttotal"] {
+    padding: 8px;
+    width: 120px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }

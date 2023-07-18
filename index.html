@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Financial Calculator</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Financial Calculator</h1>
+  <h3>Input your monthly income and expenses below</h3>
+  <br>
+  <br>
+  <br>
+  <form>
+    <label for="Net Income">Net Income:</label>
+    <label>This is income after taxes, 401k, etc.</label>
+    <br>
+    <br>
+ <div id="netIncomeContainer">
+      <div class="input-row">
+    <input type="text" name="incomeDescription" placeholder="Income Source">
+  $<input type="number" class="netIncomeContainer1" name="incomeAmount" placeholder="0.00" min="0">
+    <button type="button" onclick="addInputRow(this)">+</button>
+      </div>
+    </div>
+    <br>
+    <br>
+    <label for="fexpenses">Fixed Expenses:</label>
+    <label>These are expenses that stay the same. Mortgage/rent, student loans, car payments, etc.</label>
+    <br>
+    <br>
+    <div id="fixedExpensesContainer">
+      <div class="input-row2">
+        <input type="text" name="fexpenses" placeholder="Mortgage/Rent">
+        $<input type="number" name="nincome" class="fixedexpenseContainer2" placeholder="0.00" min="0">
+        <button type="button" onclick="addInputRow(this)">+</button>
+      </div>
+    </div>
+    <br>
+    <br>
+    <label for="vexpenses">Variable Expenses:</label>
+    <label>These are expenses that vary depending on usage. Like utilities, groceries, or gas for your car. It's best to estimate based on past spending.</label>
+    <br>
+    <br>
+    <div id="variableExpensesContainer">
+      <div class="input-row3">
+        <input type="text" name="vexpenses" placeholder="Utilities">
+        $<input type="number" name="nincome" class="varexpenseContainer3" placeholder="0.00" min="0">
+        <button type="button" onclick="addInputRow(this)">+</button>
+      </div>
+    </div>
+    <br>
+    <br>
+<button type="button" id="sumButton" onclick="add_number()">Calculate</button>
+<div id="totals-container">
+  <br>
+  <br>
+  <label for="Incomeresult">Income Total:</label> $<input type="text" id="Incomeresult" name="TextBox1">
+  <br>
+  <hr class="divider">
+  <br>
+  <label for="FEresult">Fixed Expenses Total:</label> $<input type="text" id="FEresult" name="TextBox2">
+  <br>
+  <br>
+ <label for="VEresult">Variable Expenses Total:</label> $<input type="text" id="VEresult" name="TextBox3">
+<br>
+<hr class="divider">
+<br>
+ <label for="leftover">Leftover Amount:</label> $<input type="text" name="leftover" id="lefttotal"/>
+ <br>
+ Recommendation:<p id="message"></p>
+  </div>
+  </form>
+</body>
+</html>
